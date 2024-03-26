@@ -39,6 +39,16 @@ body {
 }
 
 @layer utilities {
+  .min-h-full-screen {
+    min-height: 100vh; /* fallback for Opera, IE and etc. */
+    min-height: 100dvh;
+  }
+
+  .h-full-screen {
+    height: 100vh; /* fallback for Opera, IE and etc. */
+    height: 100dvh;
+  }
+
   .flex-center {
     @apply flex justify-center items-center;
   }
